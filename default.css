@@ -1,0 +1,47 @@
+
+/* selectors: element class id */
+
+h1 {
+    font-weight: bold;
+}
+h1, h2, h3, h4 {
+    font-family: fantasy;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* main ~ p {
+    background: red;
+    color: white;
+} */
+main + p {
+    background: lightblue;
+}
+
+p:not(.speciaal) {
+    padding-left: 1rem;
+}
+
+div {
+    --mijn-var: #008;
+}
+
+p {
+    border-left: 15px solid var(--mijn-var, pink);
+}
+
+nav ol {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+        background: lightgreen;
+        
+    }
+}

@@ -1,0 +1,12 @@
+
+
+$bla: #008;
+
+
+div {
+    --mijn-var: #008;
+}
+
+p {
+    border-left: 15px solid var(--mijn-var);
+}

@@ -1,0 +1,63 @@
+/* p:nth-child(2n) {
+    background: lightgoldenrodyellow;
+} */
+p:nth-child(4n + 1) {
+    background: lightcyan;
+}
+
+p::first-letter {
+    font-size: 3rem;
+}
+
+p::first-line {
+    background: lightskyblue;
+}
+
+input:focus {
+    box-shadow: 0 0 10px 1px purple;
+}
+input {
+    outline: none;
+}
+input:hover {
+    background: lightgray;
+}
+form {
+    margin-bottom: 1rem;;
+}
+
+form {
+    border: 2px dashed gray;
+    padding: 2rem;
+}
+form:focus-within {
+    box-shadow: 0 0 10px 1px red;
+    
+}
+
+button:disabled {
+    cursor: not-allowed;
+    border: 2px dotted red;
+    background: pink;
+}
+
+blockquote {
+    background: lightsalmon;
+    padding: 0.5rem;
+    position: relative;
+
+}
+blockquote::after {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+}
+/* blockquote::before {
+    content: 'voor';
+}
+blockquote::after {
+    content: 'na';
+} */
