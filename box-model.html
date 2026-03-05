@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="nav.css" />
 
     <style>
         * {
             box-sizing: border-box;
         }
 
+        @view-transition {
+            navigation: auto;
+        }
         /* block element: neemt standaard alle ruimte in */
         div {
             background: red;
@@ -32,6 +37,15 @@
     </style>
 </head>
 <body>
+		<nav>
+			<ol>
+				<li><a href="/start">Start</a></li>
+				<li><a href="/portfolio">Portfolio</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/box-model.html">Box model</a></li>
+				<li><a href="/animations.html">Animations</a></li>
+			</ol>
+		</nav>
 
     <p>lorem ipsum bla <div>saai divje</div> dolor sit amet</p>
     <p>lorem ipsum bla <span>saai spannetje</span> dolor sit amet</p>
