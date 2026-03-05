@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.pixels {
+				font-size: 16px; /* niet relatief. voor fonts is px niet ok. */
+			}
+			.ems {
+				font-size: 0.8em; /* relatief tov van parent element */
+			}
+			.rems {
+				font-size: 1rem; /* relatief tov van root (browserinstelling) */
+			}
+			.vws {
+				font-size: 3vw; /* trekt zich niks aan de zoomen/instellingen */
+			}
+		</style>
+	</head>
+	<body>
+		<p class="pixels">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, laborum.</p>
+		<p class="ems">Sapiente in dolor mollitia unde quos atque voluptatem magni exercitationem!</p>
+		<p class="rems">Odio numquam rerum quod aperiam obcaecati quas ipsam sit veniam!</p>
+		<p class="vws">Odit aperiam modi quo, unde ab rem expedita impedit ipsum!</p>
+
+		<ul class="ems">
+			<li>Lorem, ipsum dolor.</li>
+			<li>Voluptatem, iure corporis.</li>
+			<li>
+				Veritatis, maxime architecto.
+				<ul class="ems">
+					<li>Lorem, ipsum dolor.</li>
+					<li>Voluptatem, iure corporis.</li>
+					<li>
+						Veritatis, maxime architecto.
+						<ul class="ems">
+							<li>Lorem, ipsum dolor.</li>
+							<li>Voluptatem, iure corporis.</li>
+							<li>Veritatis, maxime architecto.</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

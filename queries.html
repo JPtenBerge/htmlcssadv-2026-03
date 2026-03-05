@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#container {
+				background: lightgreen;
+				padding: 1rem;
+				width: 700px;
+				margin: 0 auto;
+			}
+			@media (max-width: 680px) {
+                /* responsive design. */
+				#container {
+					background: lightblue;
+					width: 500px;
+				}
+			}
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --base-color1: #222;
+                }
+            }
+            @media (prefers-reduced-motion:reduce) {
+                * {
+                    animation: none !important;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<div id="container">Hallo!</div>
+	</body>
+</html>
