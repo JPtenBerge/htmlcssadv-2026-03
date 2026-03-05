@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template: 
+                '. header header' 50px
+                'ads main nav' 1fr
+                'footer footer footer' 100px / 70px 1fr 100px;
+            /* grid-template-rows: 50px 1fr 100px; */
+        }
+        header {
+            background: lightgoldenrodyellow;
+            grid-area: header;
+        }
+        nav {
+            background: lightgreen;
+            grid-area: nav;
+        }
+        main {
+            background: lightblue;
+            grid-area: main;
+        }
+        aside {
+            background: lightgray;;
+            grid-area: ads;
+        }
+        footer {
+            background-color: blueviolet;
+            grid-area: footer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>Logo + slogan</header>
+
+    <nav>
+        <ol>
+            <li><a href="">Lorem, ipsum.</a></li>
+            <li><a href="">Veniam, cum.</a></li>
+            <li><a href="">Quas, nam.</a></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Content hier</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur voluptates, iure debitis vel aliquam ipsa recusandae illum quasi? Dolore?</p>
+        <p>Architecto doloribus libero reiciendis, distinctio officiis quaerat ipsa eos, cumque explicabo consequatur error. Inventore modi esse corrupti nobis quas iusto.</p>
+        <p>Iusto ad eligendi quaerat, aperiam sunt rerum, quis eum eveniet ducimus porro quibusdam corporis ut! Incidunt eveniet iure optio. Cupiditate!</p>
+    </main>
+
+    <aside>irritante advertenties</aside>
+
+    <footer>&copy; JP 2k26</footer>
+
+</body>
+</html>

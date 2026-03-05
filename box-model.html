@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* block element: neemt standaard alle ruimte in */
+        div {
+            background: red;
+            width: calc(100% - 30px);
+            padding: 0.8rem;
+            border: 0.8rem solid purple;
+            margin: 15px;
+        }
+        p {
+            display: block;
+            background: lightpink;
+        }
+        /* inline element: bedoeld om in een paragraaf tekst op te nemen */
+        span {
+            background: lightgreen;
+            padding: 1rem;
+            margin: 1rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <p>lorem ipsum bla <div>saai divje</div> dolor sit amet</p>
+    <p>lorem ipsum bla <span>saai spannetje</span> dolor sit amet</p>
+
+
+    <div class="special">hier special</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.blokjes {
+				display: flex;
+				flex-wrap: wrap;
+				background: orange;
+				padding: 5px;
+				align-items: stretch;
+				justify-content: space-between;
+
+				div {
+					background: red;
+					margin: 5px;
+					padding: 20px;
+				}
+			}
+			.floatende-blokjes {
+				background: orange;
+				padding: 5px;
+
+				div {
+                    float: left;
+					background: red;
+					padding: 20px;
+				}
+			}
+            .grid-blokjes {
+                background: lightgreen;
+                display: grid;
+                gap: 10px;
+                grid-template-rows: 80px 120px 60px;
+                grid-template-columns: 2fr 4fr;
+
+                div {
+                    margin: 5px;
+                    background: darkgreen;
+                    color: white;
+                    padding: 20px;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<!-- <div class="blokjes">
+			<div>1</div>
+			<div>
+				2
+				<br />
+				h
+			</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div> -->
+<hr>
+		<!-- <p>
+			<img style="float: right; max-width: 100px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thesprucepets.com%2Fthmb%2FMNyO3ISqPrFZj91XUkkrdmCPhP8%3D%2F2121x1414%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2FNewborn-kittens-GettyImages-140882504-588224b65f9b58bdb35813e9.jpg&f=1&ipt=f7c26967a289c17fe17afbe37673673c141b264f9c1ac0908d883550f14f3373" alt="" />
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed.
+		</p> -->
+		<div class="floatende-blokjes">
+			<div>1</div>
+			<div>2<br>h</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+            <br style="clear: left;">
+		</div>
+        <hr>
+<!-- 
+        <div class="grid-blokjes">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div> -->
+	</body>
+</html>
